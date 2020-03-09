@@ -96,10 +96,7 @@ workflows:
               only: /.*/                             
       - store_artifact:
           requires:
-            - build_x86_64
-            - build_heroku
-            - build_rpi_armv7
-            - build_rpi_armv6
+            - build_x86_64         
           filters:
             tags:
               only: /.*/                   
